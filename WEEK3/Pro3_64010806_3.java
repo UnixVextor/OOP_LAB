@@ -28,6 +28,7 @@ public class Pro3_64010806_3 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the size for the matrix: ");
         int size = scan.nextInt();
+        if(size > 1){
         boolean notSame = true;
         int[][] matrix = new int[size][size];
         // print matrix
@@ -100,6 +101,9 @@ public class Pro3_64010806_3 {
         }
         if(notSame == true) {
             System.out.println("No same numbers on the subdiagonal");
+        }
+        }else{
+            System.out.println("the matrix have only 2X2");
         }
     }
 }
