@@ -37,7 +37,7 @@ public class Pro3_64010806_2 {
         else{
               System.out.println("Please enter year in positive number");  
         }
-
+        scanner.close();
     }
     
 }

@@ -26,5 +26,6 @@ public class Pro2_64010806_2 {
             System.out.println("The PC is " + game[PC] + ". player are " + game[player] + " player Lose");
         else if(player > 2)
             System.out.println("Please enter number between 0 - 2 next time!");
+        scanner.close();
     }
 }

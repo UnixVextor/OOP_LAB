@@ -9,5 +9,6 @@ public class Pro1_64010806_2 {
         System.out.print("Enter the number of days elapsed since today: ");
         int count = scanner.nextInt(); 
         System.out.println("Today is " + days[day] + " and the future day is " + days[day + (count%7)]);
+        scanner.close();
     }
 }

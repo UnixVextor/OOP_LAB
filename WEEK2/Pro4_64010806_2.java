@@ -13,5 +13,6 @@ public class Pro4_64010806_2 {
         }
         Arrays.sort(city);
         System.out.println("The three city in alphabetical Order are " + city[0] + " " + city[1] + " " + city[2]);
+        scanner.close();
     }
 }

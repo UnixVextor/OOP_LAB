@@ -28,6 +28,7 @@ public class Pro3_64010806_3 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the size for the matrix: ");
         int size = scan.nextInt();
+        scan.close();
         if(size > 1){
         boolean notSame = true;
         int[][] matrix = new int[size][size];

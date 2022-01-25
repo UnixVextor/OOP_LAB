@@ -13,30 +13,30 @@ public class Pro2_64010806_3 {
     }
 
     public static void main(String[] args) {
-        Scanner sacn = new Scanner(System.in);
-        
+        int[] list1;
+        int[] list2;
+        Scanner scan = new Scanner(System.in);
         System.out.print("Enter list1: ");
-        int nlist1 = sacn.nextInt();
-        try {
-        int[] list1 = new int[nlist1];
-        for(int i=0; i<nlist1;i++){
-                list1[i] = sacn.nextInt();
-            }
-            System.out.print("Enter list2: ");
-            int nlist2 = sacn.nextInt();
-            int[] list2 = new int[nlist1];
-            for(int i=0; i<nlist2;i++){
-                list2[i] = sacn.nextInt();
-            }
+        String[] nlist1 = scan.nextLine().split(" ");
+        
+        list1 = new int[nlist1.length];
+        for (int i = 0; i < nlist1.length; i++) {
+            list1[i] = Integer.parseInt(nlist1[i]);
+        }
+
+        System.out.print("Enter list2: ");
+        String[] nlist2 = scan.nextLine().split(" ");
+        list2 = new int[nlist2.length];
+        for (int i = 0; i < nlist2.length; i++) {
+            list2[i] = Integer.parseInt(nlist2[i]);
+        }
 
         int[] result = merge(list1, list2);
         System.out.print("The merged list ");
         for (int i = 1; i < result.length; i++) {
             System.out.print(result[i] + " ");
         }
-        } catch (Exception e) {
-            System.out.println("Please enter with the number since 1");
-        }
+        scan.close();
     }
     
 }

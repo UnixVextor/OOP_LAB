@@ -22,6 +22,6 @@ public class Pro5_64010806_2 {
       else{
           System.out.print("Please enter number between 1 to 15");
       }
-
+      scanner.close();
     }
   }
