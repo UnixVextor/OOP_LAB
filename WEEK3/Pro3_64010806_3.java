@@ -72,12 +72,12 @@ public class Pro3_64010806_3 {
         //check superdiagonal 
         for (int i = 0; i < 2; i++) {
             if(checkdiagonal(matrix, 0, 1, i,matrix.length-1)== true){
-                    System.out.println("All " + i + "s" +" on the superdiagonal ");
+                    System.out.println("All " + i + "s" +" on the subdiagonal ");
                     notSame = false;
             }
         }
         if(notSame == true) {
-            System.out.println("No same numbers on the superdiagonal");
+            System.out.println("No same numbers on the subdiagonal");
         }
         notSame = true;
 
@@ -96,12 +96,12 @@ public class Pro3_64010806_3 {
         //check subdigonal
         for (int i = 0; i < 2; i++) {
             if(checkdiagonal(matrix, 1, 0, i,matrix.length-1)== true){
-                    System.out.println("All " + i + "s" +" on the subdiagonal");
+                    System.out.println("All " + i + "s" +" on the superdiagonal");
                     notSame = false;
             }
         }
         if(notSame == true) {
-            System.out.println("No same numbers on the subdiagonal");
+            System.out.println("No same numbers on the superdiagonal");
         }
         }else{
             System.out.println("the matrix have only 2X2");

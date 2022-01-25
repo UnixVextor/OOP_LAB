@@ -1,12 +1,15 @@
 import java.util.*;
 public class Pro2_64010806_3 {
     public static int[] merge(int[] list1,int[] list2){
+        int num = 0;
         int[] imerge = new int[list1.length + list2.length];
         for (int i = 0; i < list1.length; i++) {
-            imerge[i] = list1[i];
+            imerge[num] = list1[i];
+            num++;
         }
         for (int x = 0; x < list2.length; x++) {
-            imerge[list1.length + x] = list2[x];
+            imerge[num] = list2[x];
+            num++;
         }
         Arrays.sort(imerge);
         return imerge;
@@ -33,9 +36,10 @@ public class Pro2_64010806_3 {
 
         int[] result = merge(list1, list2);
         System.out.print("The merged list ");
-        for (int i = 1; i < result.length; i++) {
+        for (int i = 0; i < result.length; i++) {
             System.out.print(result[i] + " ");
         }
+        System.out.println(list1);
         scan.close();
     }
     
