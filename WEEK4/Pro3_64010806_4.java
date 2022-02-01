@@ -1,56 +1,76 @@
 import java.util.*;
 public class Pro3_64010806_4 {
-    static boolean palindrome(int n){
-        int temp = n;
-        int rev = 0;
-        while(n > 0){
-            rev = rev * 10 + (n%10);
-            n = n/10;
+    static boolean isPrime(int num){
+        if (num < 2)
+            return false;
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0)
+                return false;
         }
-        if(rev == temp) return true;
-        else return false;
+        return true;
     }
-    static boolean isprime(int n){
-        int c = 0;
-        for(int i=1;i<=n;i++){
-            if(n%i == 0)
-            c++;
+    static boolean isPalindrome(int num){
+        int r;
+        int temp = num;
+        int sum = 0;
+        while (num > 0) {
+            r = num%10;
+            sum = (sum*10)+r; 
+            num = num/10; 
         }
-        if(c == 2) return true;
-        else if(c==1 && n<10 && n>1) return true;
-        else return false;
+        if(temp == sum){
+            return true; 
+        }
+        else
+            return false;
     }
-    public static void main(String[] args) {
-        double[] randomNumber = new double[1000];
-        StopWatch stopwatch = new StopWatch();
-        System.out.println("Creating a list containing 1000 elements,");
-        for (int i = 0; i < 1000; i++) {
-            randomNumber[i] = Math.random() * 1000;
-            System.out.format("%.2f  ",randomNumber[i]);
-            if((i+1)%5 == 0){
-                System.out.println();
-            }
-        }
-        System.out.println("List created. \nSorting stopwatch starts...");
-        stopwatch.start();
-        Arrays.sort(randomNumber);
-        for (int i = 0; i < 1000; i++) {
-            System.out.format("%.2f  ",randomNumber[i]);
-            if((i+1)%5 == 0){
-                System.out.println();
-            }
-        }
-        stopwatch.stop();
-        System.out.println("Sorting stopwatch stoped.");
-        System.out.println("The sort time is " + stopwatch.getElapsedTime() + " milliseconds.");
-        System.out.println("----------------------------------------------------------------------------");
-        System.out.println("The palindromPrime stopwatch starts...");
-        System.out.println("Creating 100 PalindromPrime...");
-        stopwatch.start();
-        int count=0;
-        for(int i = 0;count<100;i++)
+    public static void main(String[] args){
+        StopWatch stopWatch = new StopWatch();
+        System.out.println("Creating a list containing 1000 elements," );
+        double[] arr = new double[1000];
+        for( int i=0; i < arr.length; i++ )
         {
-            if(palindrome(i) && isprime(i))
+            arr[i] = Math.random() * 1000;
+        }
+        for(int i = 0 ; i<1000;i++)
+        {
+        
+            System.out.printf("%8.2f ",arr[i]);
+            if((i+1) % 5 == 0)
+            {
+                System.out.print("\n");
+
+            }
+        }
+      
+        System.out.println("List created.");
+        System.out.println("Sorting stopwatch starts...");
+        stopWatch.start();
+        Arrays.sort(arr);
+        
+        for(int i = 0 ; i<1000;i++)
+        {
+            System.out.printf("%8.2f ",arr[i]);
+            if((i+1) % 5 == 0)
+            {
+                System.out.print("\n");
+            }
+        }
+        
+
+        stopWatch.stop();
+
+        System.out.println();
+        System.out.println("Sorting stopwatch stoped.");
+        System.out.println("The sort time is " + stopWatch.getElapsedTime() + " milliseconds." );
+        System.out.println("------------------------------------------------------------");
+        
+        System.out.println("The palindromPrime stopwatch starts...");
+        stopWatch.start();
+        int count=0;
+        for(int i = 0;count<1000;i++)
+        {
+            if(isPalindrome(i) && isPrime(i))
             {
                 count++;
                 System.out.print(i);
@@ -63,10 +83,11 @@ public class Pro3_64010806_4 {
                 }
             }
         }
-        stopwatch.stop();
+        stopWatch.stop();
         System.out.println(" ");
         System.out.println("PalindromePrime created.");
         System.out.println("The palindromPrime stopwatch stoped.");
-        System.out.println("The palindromPrime time is "+stopwatch.getElapsedTime()+" milliseconds.");
+        System.out.println("The palindromPrime time is "+stopWatch.getElapsedTime()+" milliseconds.");
     }
+
 }
