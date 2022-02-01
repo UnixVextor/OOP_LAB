@@ -8,13 +8,16 @@ public class Pro1_64010806_4{
         String name = input.nextLine();
 
         Stock stock = new Stock(symbol,name);
-
+        try{
         System.out.print("Previous Closing Price: ");
         stock.previousClosingPrice = input.nextDouble();
         System.out.print("Current Price: ");
         stock.currentPrice = input.nextDouble();
         System.out.print("Price Change: " + stock.getChangePercent() + "%");
-        
+        }catch(Exception e){
+            System.out.println("You have to input in decimal number");
+        }
         input.close();
+
     }
 }
