@@ -62,7 +62,7 @@ public class RegularPolygon {
     }
 
     public double getArea(){
-        double pi = 22/7;
+        double pi = Math.PI;
         return (n * Math.pow(side, 2)) / (4 * Math.tan(pi/n));
     }
     

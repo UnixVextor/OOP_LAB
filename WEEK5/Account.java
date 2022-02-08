@@ -27,7 +27,7 @@ public class Account {
         this.balance = balance;
     }
 
-    public double getBanlance(){
+    public double getBalance(){
         return balance;
     }
 
@@ -48,7 +48,7 @@ public class Account {
     }
 
     public double getMonthlyInterest(){
-        return balance * annualInterestRate;
+        return balance * this.getMonthlyInterestRate();
     }
 
     public double withdraw(double withdraw){
