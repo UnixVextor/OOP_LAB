@@ -7,10 +7,7 @@ public class RegularPolygon {
     private double x = 0;
     private double y = 0;
     public RegularPolygon(){
-        n = 3;
-        side = 1;
-        x = 0;
-        y = 0;
+       
     }
 
     public RegularPolygon(int n,double side){
