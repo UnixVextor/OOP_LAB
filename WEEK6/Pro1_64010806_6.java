@@ -14,6 +14,8 @@ public class Pro1_64010806_6 {
         System.out.print("height in inches: ");
         double height = input.nextDouble();
         BMI person = new BMI(name,age,weigth,height/12,height%12);
+        System.out.println("Name :" + person.getName());
+        System.out.println("Age :" + person.getAge());
         System.out.format("BMI value: %.2f\n",person.getBMI());
         System.out.println("Interpretation: " + person.getInterpretation());
         input.close();
