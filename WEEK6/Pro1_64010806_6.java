@@ -19,6 +19,7 @@ public class Pro1_64010806_6 {
         System.out.format("BMI value: %.2f\n",person.getBMI());
         System.out.println("Interpretation: " + person.getInterpretation());
         input.close();
+        
     }
     
 }

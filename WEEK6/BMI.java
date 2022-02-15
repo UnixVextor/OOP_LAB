@@ -4,8 +4,8 @@ public class BMI {
     private double weigth = 0;
     private double height = 0;
     private double BMI = 0;
-    static final double POUND_PER_WEIGHT = 0.45359237;
-    static final double INCHES_PER_HEIGHT = 0.0254;
+    private static final double POUND_PER_WEIGHT = 0.45359237;
+    private static final double INCHES_PER_HEIGHT = 0.0254;
 
     public BMI(String name,int age,double weigth,double feet,double inches){
         this.name = name;
