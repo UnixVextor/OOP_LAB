@@ -18,9 +18,13 @@ public class Queue {
 
     public int dequeue(){
         int number = element[0];
+        if(size > 0){
         System.arraycopy(element, 1, element, 0, size-1);
         element[size-1] = 0;
         size--;
+        }else{
+            System.out.println("Your element is empty");
+        }
         return number;
     }
 

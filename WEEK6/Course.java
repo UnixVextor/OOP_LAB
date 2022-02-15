@@ -19,13 +19,15 @@ public class Course {
 
     public void dropStudent(String nameStudent){
         for (int i = 0; i < numberStudents; i++) {
-            if(Students[i].equals(nameStudent)){
+            String newName = nameStudent.toLowerCase();
+            String student = Students[i].toLowerCase();
+            if(student.equals(newName)){
                 System.arraycopy(Students, i+1, Students, i, numberStudents - i - 1);
-                Students[numberStudents - i] = null;
+                Students[numberStudents + 1 - i] = null;
+                numberStudents--;
                 break;
             }
         }
-        numberStudents--;
     }
 
     public void clear(){

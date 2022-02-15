@@ -21,8 +21,8 @@ public class BMI {
 
     public String getInterpretation(){
         if(BMI >= 30.0) return "Obese";
-        else if(BMI < 30.0 && BMI <= 25.0) return "Overweight";
-        else if(BMI < 25.0 && BMI <= 18.5) return "Normal";
+        else if(BMI < 30.0 && BMI >= 25.0) return "Overweight";
+        else if(BMI < 25.0 && BMI >= 18.5) return "Normal";
         else if(BMI < 18.5) return "Underweight";
         return null;
     }

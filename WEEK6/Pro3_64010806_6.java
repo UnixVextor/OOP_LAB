@@ -9,10 +9,7 @@ public class Pro3_64010806_6 {
         
         System.out.println("\nAfter dequeue");
         for (int i = 0; i < 20; i++) {
-            System.out.println( queue.dequeue());
+            System.out.println(queue.dequeue());
         }
-        
-    }
-    
-    
+    } 
 }

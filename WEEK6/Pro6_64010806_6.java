@@ -9,8 +9,8 @@ public class Pro6_64010806_6 {
         int choice = 0;
         System.out.print("Enter an id: ");
         int id = input.nextInt();
-        while(id <= 9){
-            while(choice != 4){
+        while(true){
+            while(choice != 4 && id <= 9){
                 System.out.println("\nMain menu");
                 System.out.println("1: check balance");
                 System.out.println("2: withdraw");
@@ -23,11 +23,21 @@ public class Pro6_64010806_6 {
                 }else if(choice == 2){
                     System.out.print("Enter an amount to withdraw: ");
                     double withdraw = input.nextDouble();
-                    account[id].withdraw(withdraw);
+                    if(withdraw < account[id].getBalance() && withdraw > 0){
+                        account[id].withdraw(withdraw);
+                    }else if(withdraw < 0){
+                        System.out.println("Your input cannot be negative number");
+                    }else{
+                        System.out.println("Your withdraw grater than your balance");
+                    }
                 }else if(choice == 3){
                     System.out.print("Enter an amount to deposit: ");
                     int deposit = input.nextInt();
-                    account[id].deposit(deposit);
+                    if(deposit > 0){
+                        account[id].deposit(deposit);
+                    }else{
+                        System.out.println("Your input cannot be negative");
+                    }
                 }else if(choice == 4){
                     System.out.println("End of program");
                 }
@@ -36,7 +46,7 @@ public class Pro6_64010806_6 {
             System.out.print("\nEnter an id: ");
             id = input.nextInt();
         }
-        input.close();
-
+        
     }
+    
 }
