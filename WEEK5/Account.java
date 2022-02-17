@@ -12,6 +12,7 @@ public class Account {
     public Account(int id,double balance){
         this.id = id;
         this.balance = balance;
+        annualInterestRate = 0;
         dateCreate = new Date();
     }
 
@@ -51,12 +52,15 @@ public class Account {
         return balance * this.getMonthlyInterestRate();
     }
 
-    public double withdraw(double withdraw){
-        return balance -= withdraw;
+    public void withdraw(double withdraw){
+        balance -= withdraw;
     }
 
-    public double deposit(int deposit){
-        return balance += deposit;
+    public void deposit(int deposit){
+         balance += deposit;
     }
 
+    public String toString(){
+        return "Account" + "\nBalance is " + balance;
+    }
 }

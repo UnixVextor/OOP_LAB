@@ -45,6 +45,7 @@ public class Pro6_64010806_6 {
             choice = 0;
             System.out.print("\nEnter an id: ");
             id = input.nextInt();
+            input.close();
         }
         
     }
