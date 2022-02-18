@@ -11,7 +11,7 @@ public class SavingAccount extends Account{
         if(amount < getBalance()){
             setBalance(getBalance() - amount);
         }else{
-            System.out.println("Erroe! you cannot withdraw");
+            System.out.println("Error! you cannot withdraw");
         }
     }
 

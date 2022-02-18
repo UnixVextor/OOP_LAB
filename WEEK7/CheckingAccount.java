@@ -27,6 +27,7 @@ public class CheckingAccount extends Account{
 	}
 
     public String toString(){
-        return super.toString();
+        return "\nChecking Account" + "\nOverdraft Limit : " + overdraftLimit
+        +"\nBalance is " + getBalance() + "\nThis account was created at " + getDateCreate();
     }
 }

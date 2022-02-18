@@ -60,7 +60,9 @@ public class Account {
          balance += deposit;
     }
 
-    public String toString(){
-        return "Account" + "\nBalance is " + balance;
-    }
+    public String toString() {
+		return "\nAccount ID: " + id + "\nDate created: " + getDateCreate()
+			+ "\nBalance: $" + String.format("%.2f", balance) + 
+			"\nMonthly interest: $" + String.format("%.2f", getMonthlyInterest());
+	}
 }
