@@ -1,8 +1,8 @@
 public class Person {
-    private String name;
-    private String address;
-    private String phone_number;
-    private String Email_address;
+    protected String name;
+    protected String address;
+    protected String phone_number;
+    protected String Email_address;
     
     public Person(String name,String address,String phone_number,String email_address){
         this.name = name;
@@ -10,7 +10,6 @@ public class Person {
         this.phone_number = phone_number;
         this.Email_address = email_address;
     }
-
     public void setName(String name){
         this.name = name;
     } 

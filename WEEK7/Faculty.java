@@ -1,6 +1,6 @@
 public class Faculty extends Employee{
-    private String office_hours;
-    private String rank;
+    protected String office_hours;
+    protected String rank;
 
     public Faculty(String name,String address,String phone_number,String email_address,int office,double salary,String office_hours,String rank){
         super(name,address,phone_number,email_address,office,salary);

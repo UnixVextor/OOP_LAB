@@ -1,8 +1,8 @@
 import java.util.*;
 public class Employee extends Person{
-    private int office;
-    private double salary;
-    private Date date_hire;
+    protected int office;
+    protected double salary;
+    protected Date date_hire;
 
     public Employee(String name,String address,String phone_number,String email_address,int office,double salary){
         super(name,address,phone_number,email_address);

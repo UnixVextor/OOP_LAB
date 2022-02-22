@@ -3,12 +3,12 @@ import java.util.ArrayList;
 
 public class NewAccount {
 	
-	private String name;
-	private int id;
-	private double balance;
-	private static double annualInterestRate;
-	private Date dateCreated;
-	private ArrayList<Transaction> transactions;
+	protected String name;
+	protected int id;
+	protected double balance;
+	protected static double annualInterestRate;
+	protected Date dateCreated;
+	protected ArrayList<Transaction> transactions;
 
 	
 	NewAccount() {

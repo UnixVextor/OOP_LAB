@@ -1,10 +1,10 @@
 public class Transaction {
 	
-	private java.util.Date date;
-	private char type;
-	private double amount;
-	private double balance;
-	private String description;
+	protected java.util.Date date;
+	protected char type;
+	protected double amount;
+	protected double balance;
+	protected String description;
 
 	
 	public Transaction(char type, double amount, 

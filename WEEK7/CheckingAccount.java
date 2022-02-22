@@ -17,14 +17,15 @@ public class CheckingAccount extends Account{
     public double getOverdraftLimit(){
         return overdraftLimit;
     }
-
+    @Override
     public void withdraw(double amount) {
-		if (getBalance() - amount > overdraftLimit) {
-			setBalance(getBalance() - amount);
-		}
-		else
-			System.out.println("Error! Amount exceeds overdraft limit.");
-	}
+        if (balance + overdraftLimit >= amount) {
+            balance -= amount;
+        }
+        else{
+            System.out.println("Error");
+        }
+    }
 
     public String toString(){
         return "\nChecking Account" + "\nOverdraft Limit : " + overdraftLimit

@@ -8,7 +8,7 @@ public class SavingAccount extends Account{
     }
 
     public void withdraw(double amount){
-        if(amount < getBalance()){
+        if(amount <= getBalance()){
             setBalance(getBalance() - amount);
         }else{
             System.out.println("Error! you cannot withdraw");

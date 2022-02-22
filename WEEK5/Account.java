@@ -1,9 +1,9 @@
 import java.util.*;
 public class Account {
-    private int id = 0;
-    private double balance = 0;
-    private double annualInterestRate;
-    private Date dateCreate;
+    protected int id = 0;
+    protected double balance = 0;
+    protected double annualInterestRate;
+    protected Date dateCreate;
     
     public Account(){
         dateCreate = new Date();
