@@ -1,4 +1,5 @@
 package Pro2;
+
 import Pro1.GeometricObject;
 
 public class Square extends GeometricObject implements Colorable{
@@ -9,6 +10,12 @@ public class Square extends GeometricObject implements Colorable{
     
     public Square(double side){
         this.side = side;
+        setFilled(false);
+    }
+
+    public Square(double side,boolean filled){
+        this.side = side;
+        setFilled(filled);
     }
 
     public void setSide(double side) {
@@ -20,7 +27,10 @@ public class Square extends GeometricObject implements Colorable{
     }
     @Override
     public String howToColor(){
-        return "color all four side";
+        if(isFilled()){
+            return "Color all four side is filled";
+        }
+        else return "Color all four side is not filled";
     }
 
     public double getArea(){

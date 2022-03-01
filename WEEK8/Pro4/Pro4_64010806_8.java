@@ -10,6 +10,7 @@ public class Pro4_64010806_8 {
         System.out.println("Octagon clone Area: " + octagon2.getArea());
         System.out.println("Octagon clone Perimeter : " + octagon2.getPerimeter());
         System.out.println();
+        
         int result = octagon1.compareTo(octagon2);
         if(result == 1) System.out.println("Octagon is greather than its clone.");
         else if(result == -1) System.out.println("Octagon is less than its clone.");

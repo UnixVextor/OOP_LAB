@@ -1,7 +1,7 @@
 package Pro2;
 public class Pro2_64010806_8 {
     public static void main(String[] args) {
-        Square[] square = {new Square(2.3),new Square(4.9),new Square(2.0),new Square(1.5),new Square(5.6)};
+        Square[] square = {new Square(2.3),new Square(4.9),new Square(2.0),new Square(1.5),new Square(5.6,true)};
         
         for (int i = 0; i < square.length; i++) {
             System.out.println("Square #" + (i+1));
