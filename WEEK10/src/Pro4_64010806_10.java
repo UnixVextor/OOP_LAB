@@ -16,7 +16,7 @@ public class Pro4_64010806_10 extends Application{
     });
 
     Scene scene = new Scene(pane,600,100);
-    window.setTitle("Excersice15_29");
+    window.setTitle("Pro4");
     window.setScene(scene);
     window.show();
 

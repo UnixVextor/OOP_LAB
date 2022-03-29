@@ -42,7 +42,7 @@ public class Pro6_64010806 extends Application {
         });
 
         Scene scene = new Scene(pane,200,200);
-        window.setTitle("Exercise16_18");
+        window.setTitle("Pro6");
         window.setScene(scene);
         window.show();
     }    

@@ -34,7 +34,7 @@ public class Pro5_64010806_10 extends Application{
         });
 
         Scene scene = new Scene(borderpane,250,250);
-        window.setTitle("Exercise_15_28");
+        window.setTitle("Pro5");
         window.setScene(scene);
         window.show();
         pane.requestFocus();

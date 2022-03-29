@@ -28,7 +28,7 @@ public class Pro2_64010806_10 extends Application{
 
 
         Scene scene = new Scene(pane);
-        window.setTitle("Exercise14_07");
+        window.setTitle("Pro2");
         window.setScene(scene);
         window.show();
     }

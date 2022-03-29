@@ -18,7 +18,7 @@ public class Pro3_64010806_10 extends Application{
         BorderPane.setAlignment(time, Pos.TOP_CENTER);
 
         Scene scene = new Scene(pane,250,250);
-        window.setTitle("Exercise14_28");
+        window.setTitle("Pro3");
         window.setScene(scene);
         window.show();
     }
