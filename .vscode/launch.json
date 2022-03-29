@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "src.Test",
+            "projectName": "OOP_LAB_8573e977",
+            "vmArgs": "--module-path \"C:/Program Files/javafx-sdk-17.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
             "name": "Launch Pro6_64010806",
             "request": "launch",
             "mainClass": "src.Pro6_64010806",

@@ -21,7 +21,7 @@ public class Pro6_64010806 extends Application {
         SlideFanPane fan = new SlideFanPane();
 
         Slider slider = new Slider();
-        slider.setMax(5);
+        slider.setMax(10);
         fan.ratProperty().bind(slider.valueProperty());
 
         BorderPane pane = new BorderPane();

@@ -48,7 +48,7 @@ public class FanPane extends StackPane {
         double angle = 0;
         for (int i = 0; i < 4; i++) {
             Arc arc = new Arc(125,115,90,90,angle + 90,50);
-            arc.setFill(Color.BLACK);
+            arc.setFill(Color.RED);
             arc.setType(ArcType.ROUND);
             pane.getChildren().add(arc);
             angle += 90;
