@@ -9,7 +9,8 @@
         "WEEK7",
         "WEEK8",
         "WEEK9",
-        "WEEK10"
+        "WEEK10",
+        "WEEK11"
     ],
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
