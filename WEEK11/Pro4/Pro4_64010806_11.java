@@ -28,7 +28,7 @@ public class Pro4_64010806_11 {
         double totalFull = getTotal(full);
         double totalFaculty = (totalAssistant + totalAssociate + totalFull);
         
-        System.out.println("\n Total salary");
+
         System.out.println("---------------------");
         System.out.printf("Total salary for assistant professors is $%.2f\n", totalAssistant);
         System.out.printf("Total salary for associate professors is $%.2f\n", totalAssociate);

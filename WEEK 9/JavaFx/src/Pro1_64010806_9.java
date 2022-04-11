@@ -9,7 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.BorderPane;
 import javafx.geometry.Pos;
-
+ 
 public class Pro1_64010806_9 extends Application {
 	protected TextField Amount = new TextField();
 	protected TextField numberOfYears = new TextField();
